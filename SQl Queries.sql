@@ -41,17 +41,17 @@ SELECT * FROM Orders;
 
 -- Import Data into Books Table
 COPY Books(Book_ID, Title, Author, Genre, Published_Year, Price, Stock) 
-FROM "C:/Users/nenav/Downloads/Book/Books.csv"
+FROM 'C:/Users/nenav/Downloads/Book/Books.csv'
 CSV HEADER;
 
 -- Import Data into Customers Table
 COPY Customers(Customer_ID, Name, Email, Phone, City, Country) 
-FROM "C:/Users/nenav/Downloads/Book/Customers.csv"
+FROM 'C:/Users/nenav/Downloads/Book/Customers.csv'
 CSV HEADER;
 
 -- Import Data into Orders Table
 COPY Orders(Order_ID, Customer_ID, Book_ID, Order_Date, Quantity, Total_Amount) 
-FROM "C:/Users/nenav/Downloads/Book/Orders.csv" 
+FROM 'C:/Users/nenav/Downloads/Book/Orders.csv' 
 CSV HEADER;
 
 
